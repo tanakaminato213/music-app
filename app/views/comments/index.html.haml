@@ -1,17 +1,10 @@
-- if user_signed_in?
-  / ユーザーがログインしているか調べる
-  / ユーザーがログインしていた時の処理
-  %h2
-    MY PAGE
-  %h4
-    ユーザーネーム： #{current_user.name}
-  %h5 メールアドレス： #{current_user.email}
-  = link_to "ログアウト", destroy_user_session_path, method: :delete
-  / ログアウトをする
-- else
-  / ユーザーがログインしていなかった時の処理
-  %h2 現在ログインしていません
-  = link_to "ログイン", new_user_session_path, class: 'post'
-  / ログイン画面に移行する
-  = link_to "新規登録", new_user_registration_path, class: 'post'
-  / 新規登録画面に移行する
+%body
+  .wrapper
+
+  =render 'comments/up_bar'
+
+
+.music-main
+
+
+
