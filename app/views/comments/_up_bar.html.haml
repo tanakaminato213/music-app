@@ -11,10 +11,10 @@
       = link_to "ログアウト", destroy_user_session_path, method: :delete
     %li.history
       = link_to "再生履歴"
-- else
-  / ユーザーがログインしていなかった時の処理
-  %h2 現在ログインしていません
-  = link_to "ログイン", new_user_session_path, class: 'post'
-  / ログイン画面に移行する
-  = link_to "新規登録", new_user_registration_path, class: 'post'
-  / 新規登録画面に移行する
+-# - else
+-#   / ユーザーがログインしていなかった時の処理
+-#   %h2 現在ログインしていません
+-#   = link_to "ログイン", new_user_session_path, class: 'post'
+-#   / ログイン画面に移行する
+-#   = link_to "新規登録", new_user_registration_path, class: 'post'
+-#   / 新規登録画面に移行する

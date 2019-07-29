@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.log-in-form{
+  height: 100vh;
+  width: 1440px;
+  background-position: 75% 0px;
+  background: linear-gradient( 135deg, rgba(246, 255, 0, 0.281), rgba(0, 47, 255, 0.733)),
+  url(https://girlydrop.com/wp-content/uploads/post/p1046.jpg);
+  background-size: 1500px;
+  
+  .main-header{
+    height: 400px;
+    position: relative;
+    
+  .log-tittle{
+    font-weight: 800;
+    font-size: 30px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    white-space: nowrap;
+    width: 128px;
+    height: 64px;
+  }
+}
+  .new_user{
+    font-size: 20px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 200px;
+    left: 0px;
+    width: 180px;
+    height: 64px;
+  }
+    .field{
+      display: inline-block;
+      min-width: 100%;
+      
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+  .sign-up{
+    font-weight: 800;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    bottom: 0px;
+    left: 100px;
+    width: 128px;
+    height: 70px;
+  }
+  .forgot{
+    font-weight: 800;
+    margin: auto;
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    bottom: 0px;
+    left: 100px;
+    width: 128px;
+    height: 70px;
+    
+  }
+}
