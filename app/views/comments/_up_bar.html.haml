@@ -7,10 +7,22 @@
       MUSIC-APP
     %li.favorite
       = link_to "お気に入り"
-    %li.right-box
-      = link_to "ログアウト", destroy_user_session_path, method: :delete
     %li.history
       = link_to "再生履歴"
+    %li.right-box
+      = link_to "ログアウト", destroy_user_session_path, method: :delete
+    .form
+      .form__mask
+        %input.hidden{type: 'text',placeholder: "キーワードを入力"}
+      %input.form__submit{type: 'submit', value: '検索'}
+      %script#results-template{:type => "text/x-handlebars-template"}
+        :cdata
+        {{#each albums.items}}
+        <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+        {{/each}}
+
+
+
 -# - else
 -#   / ユーザーがログインしていなかった時の処理
 -#   %h2 現在ログインしていません
@@ -18,3 +30,8 @@
 -#   / ログイン画面に移行する
 -#   = link_to "新規登録", new_user_registration_path, class: 'post'
 -#   / 新規登録画面に移行する
+
+-# %textarea.html{:cols => "60", :name => "code", :rows => "5"}
+-#   %form{:action => "”\"", :id => "”searchform5″", :method => "”get”"}
+-#     %input{:class => "”isearch5″", :id => "”keywords”", :name => "”keywords”", :type => "”text”"}/
+-#     %input{:class => "”ibutton5″", :type => "”submit”", :value => "”\""}/

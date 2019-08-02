@@ -57,4 +57,22 @@
       text-decoration:blink;color:#33FF00;
     }
   }
+.form{
+  float:right;
+  padding: 0px 100px 20px 20px;
+  &__mask{
+    background-color: white;
+    float: left;
+  }
+  &__submit{
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .hidden{
+    width: 150px;
+    background-color: black;
+    border: none;
+    color: white;
+  }
 }
+}  
